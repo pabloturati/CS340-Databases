@@ -1,0 +1,4 @@
+DELETE FROM bsg_people WHERE age IS NULL;
+SELECT *
+FROM bsg_people
+WHERE age IS NOT NULL;
