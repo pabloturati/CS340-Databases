@@ -6,4 +6,5 @@
 
 -- Put query for Q1 here
 
+-- SOLUTION
 SELECT film_id, title, rental_duration FROM film WHERE rental_duration=(SELECT MIN(rental_duration) FROM film) OR length=(SELECT MAX(length) FROM film) ORDER BY film_id;
